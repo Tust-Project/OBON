@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageNotree.master.cs" Inherits="MasterPageNotree" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>拖吊開單紀錄系統</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #form1
+        {
+            height: 690px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="position: absolute; z-index: auto; top: 0px; left: 0px; background-color: #CCFFCC;">
+        <img src="image/Title.jpg" alt="上層的圖" />
+    </div>
+    <div style="position: absolute; z-index: auto; background-color: #DDEEFF; top: 66px; left: 51px; width: 109%; height: 1000px; border-spacing: 20px;">
+         
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <asp:ScriptManager ID="ScriptManager1" runat="server" /> 
+            <div style="display:none"></div>
+            </asp:ContentPlaceHolder>
+        
+    </div>    
+    <div style="width: 46px; position: absolute; z-index: auto; background-color: #A4E9FF; top: 66px; left: 0px; height: 1000px; right: 898px;">
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+    </div>
+         
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>台灣優勢客服外撥紀錄系統</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #form1
+        {
+            height: 690px;
+        }
+    </style>
+</head>
+<body bgcolor="#ccff99">
+    <form id="form1" runat="server">
+    <div style="position: absolute; z-index: auto; top: 0px; left: 0px; background-color: #CCFFCC;">
+        <img src="image/Title.jpg" />
+    </div>
+    <div style="position: absolute; z-index: auto; background-color: #DDEEFF; top: 53px; left: 190px; width: 100%; height: 800px;">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <asp:ScriptManager ID="ScriptManager1" runat="server" /> 
+            </asp:ContentPlaceHolder>
+    </div>    
+    <div style="width: 184px; position: absolute; z-index: auto; background-color: #A4E9FF; top: 53px; left: 1px; height: 800px; font-size: 12pt;">
+        <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" 
+            Font-Size="12pt" ImageSet="Faq" style="font-size: small" Width="103px">
+            <ParentNodeStyle Font-Bold="False" />
+            <HoverNodeStyle Font-Underline="True" ForeColor="Purple" />
+            <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" 
+                VerticalPadding="0px" />
+            <NodeStyle Font-Names="Tahoma" Font-Size="8pt" ForeColor="DarkBlue" 
+                HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+        </asp:TreeView>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+    </div>
+    </form>
+</body>
+</html>

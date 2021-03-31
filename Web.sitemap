@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="外撥紀錄報表" description="">
+    <siteMapNode url="" title="查詢" description="" >
+      <siteMapNode url="ReportOutbound.aspx" title="外撥報表" description="外撥報表" />
+      <siteMapNode url="ReportOutboundSamsung.aspx" title="三星外撥報表" description="三星外撥報表" />
+      <!--<siteMapNode url="RecordQuery.aspx" title="錄音查詢" description="" />-->
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
